@@ -13,6 +13,7 @@ plot1 <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, size = pop, colour=co
   labs(title = "Year: {frame_time}", x=" GDP per Capita", y="Life Expectancy") + 
   facet_wrap(~continent) +
   theme_bw()
+options(scipen = 999)
 
 animate(plot1, nframes = 200, renderer = gifski_renderer("gganim.gif"))
 
