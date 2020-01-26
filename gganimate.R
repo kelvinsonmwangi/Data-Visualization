@@ -4,7 +4,6 @@ library(ggplot2)
 library(gapminder)
 library(gganimate)
 library(gifski)
-library(dplyr)
 
 
 plot1 <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, size = pop, colour=continent)) +
